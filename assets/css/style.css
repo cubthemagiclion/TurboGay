@@ -39,9 +39,34 @@ section {
   overflow: hidden;
 }
 
+  .contact-section-header {
+    text-align: center;
+    padding-bottom: 40px;
+    padding-top: 100px;
+  }
+
+  .contact-section-header h2 {
+    font-size: 13px;
+    letter-spacing: 1px;
+    font-weight: 700;
+    margin: 0;
+    color: #4154f1;
+    text-transform: uppercase;
+  }
+
+  .contact-section-header p {
+    margin: 10px 0 0 0;
+    padding: 0;
+    font-size: 38px;
+    line-height: 42px;
+    font-weight: 700;
+    color: #012970;
+  }
+
 .section-header {
   text-align: center;
   padding-bottom: 40px;
+    padding-top: 50px;
 }
 
 .section-header h2 {
@@ -74,7 +99,7 @@ section {
 --------------------------------------------------------------*/
 .breadcrumbs {
   padding: 15px 0;
-  background: #012970;
+  background: #86007D;
   min-height: 40px;
   margin-top: 82px;
   color: #fff;
@@ -968,8 +993,15 @@ section {
 .services .service-box:hover h3, .services .service-box:hover p, .services .service-box:hover .read-more {
   color: #fff;
 }
+.services .what-happened-candidate:hover h3, .services .what-happened-candidate:hover p, .services .what-happened-candidate:hover .read-more {
+  color: #fff;
+}
 
 .services .service-box:hover .icon {
+  background: #fff;
+}
+
+.services .what-happened-candidate:hover .icon {
   background: #fff;
 }
 
@@ -1749,7 +1781,7 @@ section {
 
 .blog .entry .entry-img {
   max-height: 440px;
-  margin: -30px -30px 20px -30px;
+  margin: 30px 30px 20px 30px;
   overflow: hidden;
 }
 
@@ -2431,6 +2463,7 @@ section {
   padding-top: 100px;
 }
 
+
 .pricing-section-header h2 {
   font-size: 13px;
   letter-spacing: 1px;
@@ -2482,7 +2515,7 @@ section {
 }
 
 @media (max-width: 768px) {
-  .tell-us-what-happened-section-headerp {
+  .tell-us-what-happened-section-header p {
     font-size: 28px;
     line-height: 32px;
   }
