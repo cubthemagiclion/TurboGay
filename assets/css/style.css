@@ -199,7 +199,7 @@ section {
 # Navigation Menu
 --------------------------------------------------------------*/
 /**
-* Desktop Navigation 
+* Desktop Navigation
 */
 .navbar {
   padding: 0;
@@ -317,7 +317,7 @@ section {
 }
 
 /**
-* Mobile Navigation 
+* Mobile Navigation
 */
 .mobile-nav-toggle {
   color: #012970;
@@ -764,7 +764,18 @@ section {
 .services .service-box {
   box-shadow: 0px 0 30px rgba(1, 41, 112, 0.08);
   height: 100%;
-  padding: 60px 30px;
+    padding-top: 100px;
+  padding: 10px 30px;
+  text-align: center;
+  transition: 0.3s;
+  border-radius: 5px;
+}
+
+.services .what-happened-candidate {
+  box-shadow: 0px 0 30px rgba(1, 41, 112, 0.08);
+  height: 100%;
+  padding-top: 100px;
+  padding: 10px 30px;
   text-align: center;
   transition: 0.3s;
   border-radius: 5px;
@@ -781,12 +792,37 @@ section {
   transition: 0.3s;
 }
 
+.services .what-happened-candidate .icon {
+  font-size: 36px;
+  padding: 40px 20px;
+  border-radius: 4px;
+  position: relative;
+  margin-bottom: 25px;
+  display: inline-block;
+  line-height: 0;
+  transition: 0.3s;
+}
+
 .services .service-box h3 {
   color: #444444;
   font-weight: 700;
 }
 
+.services .what-happened-candidate h3 {
+  color: #444444;
+  font-weight: 700;
+}
+
 .services .service-box .read-more {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 600;
+  font-size: 16px;
+  padding: 8px 20px;
+}
+
+.services .what-happened-candidate .read-more {
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -801,11 +837,27 @@ section {
   font-size: 18px;
 }
 
+.services .what-happened-candidate .read-more i {
+  line-height: 0;
+  margin-left: 5px;
+  font-size: 18px;
+}
+
 .services .service-box.blue {
   border-bottom: 3px solid #2db6fa;
 }
 
+.services .what-happened-candidate.blue {
+  border-bottom: 3px solid #2db6fa;
+}
+/* line at the bottom */
+
 .services .service-box.blue .icon {
+  color: #2db6fa;
+  background: #dbf3fe;
+}
+
+.services .what-happened-candidate.blue .icon {
   color: #2db6fa;
   background: #dbf3fe;
 }
@@ -814,9 +866,19 @@ section {
   color: #2db6fa;
 }
 
+.services .what-happened-candidate.blue .read-more {
+  color: #2db6fa;
+}
+
 .services .service-box.blue:hover {
   background: #2db6fa;
 }
+
+.services .what-happened-candidate.blue:hover {
+  background: #2db6fa;
+}
+
+
 
 .services .service-box.orange {
   border-bottom: 3px solid #f68c09;
@@ -997,18 +1059,7 @@ section {
   color: #fff;
 }
 
-.pricing .featured {
-  width: 200px;
-  position: absolute;
-  top: 18px;
-  right: -68px;
-  transform: rotate(45deg);
-  z-index: 1;
-  font-size: 14px;
-  padding: 1px 0 3px 0;
-  background: #4154f1;
-  color: #fff;
-}
+
 
 /*--------------------------------------------------------------
 # F.A.Q
@@ -2368,3 +2419,70 @@ section {
   font-size: 13px;
   color: #012970;
 }
+
+/*--------------------------------------------------------------
+# Sections
+--------------------------------------------------------------*/
+
+
+.pricing-section-header {
+  text-align: center;
+  padding-bottom: 40px;
+  padding-top: 100px;
+}
+
+.pricing-section-header h2 {
+  font-size: 13px;
+  letter-spacing: 1px;
+  font-weight: 700;
+  margin: 0;
+  color: #4154f1;
+  text-transform: uppercase;
+}
+
+.pricing-section-header p {
+  margin: 10px 0 0 0;
+  padding: 0;
+  font-size: 38px;
+  line-height: 42px;
+  font-weight: 700;
+  color: #012970;
+}
+
+@media (max-width: 768px) {
+  .pricing-section-header p {
+    font-size: 28px;
+    line-height: 32px;
+  }
+}
+
+
+.tell-us-what-happened-section-header {
+  text-align: center;
+  padding-bottom: 40px;
+  padding-top: 100px;
+}
+
+.tell-us-what-happened-section-header h2 {
+  font-size: 13px;
+  letter-spacing: 1px;
+  font-weight: 700;
+  margin: 0;
+  color: #4154f1;
+  text-transform: uppercase;
+}
+
+.tell-us-what-happened-section-header p {
+  margin: 10px 0 0 0;
+  padding: 0;
+  font-size: 38px;
+  line-height: 42px;
+  font-weight: 700;
+  color: #012970;
+}
+
+@media (max-width: 768px) {
+  .tell-us-what-happened-section-headerp {
+    font-size: 28px;
+    line-height: 32px;
+  }
